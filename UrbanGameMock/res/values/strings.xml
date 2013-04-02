@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">UrbanGameMock</string>
+
+    <!-- UrbanGameMockActivity -->
+    <string name="button_games">Games</string>
+    <string name="button_tasks">Tasks</string>
+
+    <!-- GamesListActivity -->
+    <string name="label_completedTasks">Completed tasks:</string>
+    <string name="label_points">Points:</string>
+    <string name="label_timeLeft">Time left:</string>
+    <string name="label_joined">Joined</string>
+    <string name="label_notJoined">Not joined</string>
+    <string name="label_freeSlots">Free slots:</string>
+    <string name="label_numberOfPlayers">Number of players:</string>
+    <string name="label_daysLeft">Days left:</string>
+    <string name="label_hoursLeft">Hours left:</string>
+    <string name="label_minutesLeft">Minutes left:</string>
+
+    <!-- TasksListActivity -->
+
+
+</resources>

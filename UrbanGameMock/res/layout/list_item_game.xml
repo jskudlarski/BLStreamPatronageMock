@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp" >
+
+    <ImageView
+        android:id="@+id/imageViewGameLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:src="@drawable/ic_launcher_big" />
+
+    <TextView
+        android:id="@+id/textViewGameName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/imageViewGameLogo"
+        android:text="Krasnale Wrocławskie"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textViewPointsValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textViewPoints"
+        android:layout_toRightOf="@+id/textViewPoints"
+        android:text="25" />
+
+    <TextView
+        android:id="@+id/textViewCompletedTasksValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textViewCompletedTasks"
+        android:layout_toRightOf="@+id/textViewCompletedTasks"
+        android:text="4" />
+
+    <TextView
+        android:id="@+id/textViewDivider1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textViewCompletedTasks"
+        android:layout_toRightOf="@+id/textViewCompletedTasksValue"
+        android:text="/" />
+
+    <TextView
+        android:id="@+id/textViewDivider2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textViewPoints"
+        android:layout_toRightOf="@+id/textViewPointsValue"
+        android:text="/" />
+
+    <TextView
+        android:id="@+id/textViewTotalTasks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textViewCompletedTasks"
+        android:layout_toRightOf="@+id/textViewDivider1"
+        android:text="20" />
+
+    <TextView
+        android:id="@+id/textViewTotalPoints"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textViewPoints"
+        android:layout_toRightOf="@+id/textViewDivider2"
+        android:text="50" />
+
+    <TextView
+        android:id="@+id/textViewFreeSlotsValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textViewFreeSlots"
+        android:layout_toRightOf="@+id/textViewFreeSlots"
+        android:text="5"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/textViewNumberOfPlayersValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textViewNumberOfPlayers"
+        android:layout_toRightOf="@+id/textViewNumberOfPlayers"
+        android:text="5" />
+
+    <TextView
+        android:id="@+id/textViewDaysLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textViewDaysLeftValue"
+        android:layout_marginRight="5dp"
+        android:layout_toLeftOf="@+id/textViewDaysLeftValue"
+        android:text="@string/label_daysLeft" />
+
+    <TextView
+        android:id="@+id/textViewHoursLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textViewHoursLeftValue"
+        android:layout_alignBottom="@+id/textViewHoursLeftValue"
+        android:layout_marginRight="5dp"
+        android:layout_toLeftOf="@+id/textViewHoursLeftValue"
+        android:text="@string/label_hoursLeft" />
+
+    <TextView
+        android:id="@+id/textViewMinutesLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textViewMinutesLeftValue"
+        android:layout_alignBottom="@+id/textViewMinutesLeftValue"
+        android:layout_marginRight="5dp"
+        android:layout_toLeftOf="@+id/textViewMinutesLeftValue"
+        android:text="@string/label_minutesLeft" />
+
+    <TextView
+        android:id="@+id/textViewOperatorName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewGameName"
+        android:layout_toRightOf="@+id/imageViewGameLogo"
+        android:text="Operator" />
+
+    <TextView
+        android:id="@+id/textViewOperatorLink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/imageViewGameLogo"
+        android:layout_below="@+id/textViewOperatorName"
+        android:layout_toRightOf="@+id/imageViewGameLogo"
+        android:text="http://www.blstream.com/" />
+
+    <TextView
+        android:id="@+id/textViewCompletedTasks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewOperatorLink"
+        android:layout_marginRight="5dp"
+        android:text="@string/label_completedTasks" />
+
+    <TextView
+        android:id="@+id/textViewPoints"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewCompletedTasks"
+        android:layout_marginRight="5dp"
+        android:text="@string/label_points" />
+
+    <TextView
+        android:id="@+id/textViewDaysLeftValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textViewOperatorLink"
+        android:text="333" />
+
+    <TextView
+        android:id="@+id/textViewFreeSlots"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textViewPoints"
+        android:layout_marginRight="5dp"
+        android:text="@string/label_freeSlots"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/textViewNumberOfPlayers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textViewFreeSlots"
+        android:layout_marginRight="5dp"
+        android:text="@string/label_numberOfPlayers" />
+
+    <TextView
+        android:id="@+id/textViewHoursLeftValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textViewDaysLeftValue"
+        android:text="444" />
+
+    <TextView
+        android:id="@+id/textViewMinutesLeftValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textViewHoursLeftValue"
+        android:text="555" />
+
+    <TextView
+        android:id="@+id/textViewJoined"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/textViewMinutesLeftValue"
+        android:layout_below="@+id/textViewMinutesLeft"
+        android:text="@string/label_joined"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+</RelativeLayout>
